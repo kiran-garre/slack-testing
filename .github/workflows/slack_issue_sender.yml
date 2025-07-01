@@ -26,4 +26,4 @@ jobs:
               "user": "${{ github.event.issue.user.login }}",
               "URL": "${{ github.event.issue.html_url }}"
             }' \
-            https://hooks.slack.com/triggers/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
+            ${{ secrets.SLACK_ISSUE_WEBHOOK_URL }}
